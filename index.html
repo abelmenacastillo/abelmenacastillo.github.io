@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
     <head>
       <title>Portafolio</title>
       <!-- Required meta tags -->
@@ -7,22 +7,113 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta desciption=" ">      
       <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+      <!-- <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css"> -->
       <!-- Estilos -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="assets/css/estilos.css">
     </head>
     <body>
-        <div class="col-12">
-          <h1>Mi portafolio</h1>
-          <p class="">Otro texto extra modificado</p>
-        </div>
-        <div class="col-6">
-          <p class="">nueva modi</p>
-          <img src="assets/img/comofunciona_bivi_2.png" alt="">
-        </div>
+        <header class="header">
+          <section class="container">
+            <div class="logo">
+              <a href="index.html">AbelMena</a>
+            </div>
+            <button class="menu-btn">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <title>menu</title>
+                <path d="M0 3h20v2h-20v-2zM0 9h20v2h-20v-2zM0 15h20v2h-20v-2z"></path>
+              </svg>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" class="none">
+                <title>close</title>
+                <path d="M10 8.586l-7.071-7.071-1.414 1.414 7.071 7.071-7.071 7.071 1.414 1.414 7.071-7.071 7.071 7.071 1.414-1.414-7.071-7.071 7.071-7.071-1.414-1.414-7.071 7.071z"></path>
+              </svg>
+            </button>
+            <nav class="menu">
+              <a href="#inicio">Inicio</a>
+              <a href="#acerca">Acerca</a>
+              <a href="#servicios">Servicios</a>
+              <a href="#portafolio">Portafolio</a>
+              <a href="#contacto">Contacto</a>              
+            </nav>
+          </section>
+        </header>
+        <section id="inicio" class="home">
+          <article class="hero-image-1" style="--hero-attachment: fixed;">
+            <aside class="hero-image-opacity" style="--hero-opacity-color: var(--black-alpha-color);">
+              <div class="hero-image-content">
+                <h2 class="hero-image-title" style="--hero-text-color: var(--white-color);">Bienvenid@s <br>a mi sitio              
+                </h2>
+                <a href="#contacto" class="btn">CONTÁCTAME</a>
+              </div>
+            </aside>
+          </article>
+        </section>
+        <section id="acerca" class="about">
+          <article>
+            <aside class="slogan">
+              <h1>Abel Mena</h1>  
+              <h5>Desarrollador web</h5>          
+            </aside>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic sit est aliquid, molestias alias sequi id quibusdam nostrum molestiae excepturi, voluptatem laboriosam architecto temporibus explicabo eius assumenda harum reprehenderit nam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic sit est aliquid, molestias alias sequi id quibusdam nostrum molestiae excepturi, voluptatem laboriosam architecto temporibus explicabo eius assumenda harum reprehenderit nam.</p>            
+            <div class="">
+              <a class="btn" href="assets/" target="_blank" rel="noopener">DESCARGA MI CV</a>
+            </div>
+          </article>
+          <article>
+            <img class="gray-scale" src="assets/img/Foto-Portada.jpg" alt="AbelMena">
+          </article>
+          <article>
+            <h2>Mis Habilidades</h2>
+            <div class="progress">
+              <p>
+                <b>Desarrollo <i>Web Frontend</i></b>
+                <b>90%</b>
+              </p>
+              <progress value="90" min="0" max="100"></progress>
+            </div>
+            <div class="progress">
+              <p>
+                <b>Diseño <i>Web</i></b>
+                <b>40%</b>
+              </p>
+              <progress value="40" min="0" max="100"></progress>
+            </div>
+            <div class="progress">
+              <p>
+                <b><i>SEO</i></b>
+                <b>50%</b>
+              </p>
+              <progress value="50" min="0" max="100"></progress>
+            </div>
+            <div class="progress">
+              <p>
+                <b>Desarrollo <i>Web Backend</i></b>
+                <b>40%</b>
+              </p>
+              <progress value="40" min="0" max="100"></progress>
+            </div>
+          </article>
+        </section>
+        <section id="servicios" class="services">
+          <h2>Servicios</h2>
+        </section>
+        <section id="portafolio" class="porfolio">
+          <h2>Portafolio</h2>
+        </section>
+        <section id="testimonios" class="testimonials">
+          <h2>Testimonios</h2>
+        </section>
+        <section id="contacto" class="contact">
+          <h2>Contacto</h2>
+        </section>
+        <section class="footer">
+          <small>Sitio diseñado por <a href="#" target="_blank" rel="noopener">@abelmena</a></small>
+        </section>
         
         <!-- Optional JavaScript -->
-        <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/bootstrap/js/funciones.js"></script>
+        <!-- <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+        <script src="assets/js/funciones.js"></script>
     </body>
 </html>
