@@ -177,6 +177,52 @@ p {
     }
 }
 
+/* ***** Modal ***** */
+
+.modal {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--black-alpha-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.modal-close svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: var(--color-fondo);
+}
+
+.modal[id^="trabajo-"]:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ***** Tarjetas cards ***** */
+
+.contact-card svg path {
+    fill: var(--color-fondo);
+}
+
+
 /* ***** ProgressBar ***** */
 
 progress {
@@ -302,6 +348,27 @@ progress::-moz-progress-bar {
     margin-bottom: 2rem;
 }
 
+.contact-card {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 100%;
+    height: 144px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-card > svg {
+    fill: var(--color-fondo);
+    width: 2rem;
+    height: 2rem;
+}
+
+.contact-card > small {
+    margin-top: -.7rem;
+}
+
 .header {
     position: fixed;
     left: 0;
@@ -366,6 +433,37 @@ progress::-moz-progress-bar {
     border-radius: .1rem;  
 }
 
+.porfolio-modal {
+    background-color: var(--white-color);
+    padding: 1rem;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;    
+}
+
+.porfolio-modal img {
+    width: 260px;
+    height: 200px;
+    margin: auto;
+}
+
+.porfolio-modal h3 {
+    border-bottom: medium solid var(--color-fondo);
+    padding: .5rem 0;
+    margin: 1rem auto;
+    color: var(--title-color);
+}
+
+.porfolio-details {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-auto-rows: 2rem;
+}
+
+.porfolio-details b {
+    color: var(--color-fondo);
+}
+
 .service-card {
     margin: 1rem auto;
     padding: 1rem;
@@ -381,11 +479,37 @@ progress::-moz-progress-bar {
     fill: var(--color-fondo);
 }
 
+.social-media a {
+    text-decoration: none;
+    padding: 0 .4rem;
+}
+
+.social-media svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 @media screen and (min-width: 768px) {
+
+    .contact-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        justify-content: space-between;
+    }
 
     .porfolio > .container {
         display: grid;
         grid-template-columns: repeat(2, 50%);    
+    }
+
+    .porfolio-modal {
+        flex-direction: row;
+        max-width: 800px;
+    }
+
+    .porfolio-info {
+        margin-left: 1rem;
+        align-self: center;
     }
 
     .porfolio .section-title {
@@ -405,6 +529,10 @@ progress::-moz-progress-bar {
 }
 
 @media screen and (min-width: 1024px) {
+
+    .contact-cards {
+        grid-template-columns: repeat(4, 24%);    
+    }
 
     .about {
         display: grid;
