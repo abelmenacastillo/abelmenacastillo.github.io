@@ -202,7 +202,7 @@ p {
 .modal-close {
     position: absolute;
     top: 1rem;
-    right: 1rem;
+    right: .5rem;
 }
 
 .modal-close svg {
@@ -436,7 +436,7 @@ progress::-moz-progress-bar {
 .porfolio-modal {
     background-color: var(--white-color);
     padding: 1rem;
-    max-width: 400px;
+    max-width: 380px;
     display: flex;
     flex-direction: column;    
 }
@@ -556,4 +556,19 @@ progress::-moz-progress-bar {
         grid-template-columns: repeat(2, 30%);        
     }
 
+}
+
+@media screen and (max-width: 424px){
+    .porfolio-modal {
+        max-width: 320px;
+    }
+
+    .modal-close svg {
+        width: 2rem;
+        height: 2rem;    
+    }
+
+    .modal-close {      
+        right: 0rem;
+    }
 }
