@@ -374,7 +374,7 @@ progress::-moz-progress-bar {
 }
 
 .gray-scale {
-    filter: grayscale(1);
+    /*filter: grayscale(1);*/
     border-radius: .3rem
 }
 
